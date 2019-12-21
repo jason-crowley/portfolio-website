@@ -1,47 +1,56 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
+require('dotenv').config({
+  path: '.env',
+});
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitle: 'Jason Crowley Developer Portfolio',
+    siteTitleAlt: 'Jason Crowley | Portfolio',
+    siteHeadline: 'Jason Crowley Developer Portfolio',
+    siteUrl: 'https://jason-crowley.github.io/',
+    siteDescription:
+      'A portfolio containing a collection of projects written in React, JavaScript, Python and more, developed by Jason Crowley',
+    siteLanguage: 'en',
+    siteImage: '/banner.jpg',
+    author: 'Jason Crowley',
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: '@lekoarts/gatsby-theme-cara',
       options: {},
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
-        start_url: `/`,
-        background_color: `#141821`,
-        theme_color: `#f6ad55`,
-        display: `standalone`,
+        name: 'Jason Crowley Developer Portfolio',
+        short_name: 'Jason C. Portfolio',
+        description:
+          'A portfolio containing a collection of projects written in React, JavaScript, Python and more, developed by Jason Crowley',
+        start_url: '/',
+        background_color: '#141821',
+        theme_color: '#f6ad55',
+        display: 'standalone',
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
+            src: '/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
+            src: '/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
           },
         ],
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
   ],
-}
+};
