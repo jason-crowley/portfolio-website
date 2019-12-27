@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 
 type ProjectCardProps = {
-  link: string;
+  link?: string;
   title: string;
   children: React.ReactNode;
   bg: string;
@@ -11,8 +11,8 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
   <a
-    href={link}
-    target="_blank"
+    href={link || '#'}
+    target={link ? '_blank' : '_self'}
     rel="noreferrer noopener"
     sx={{
       width: '100%',
