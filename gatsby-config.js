@@ -7,9 +7,9 @@ module.exports = {
     siteTitle: 'Jason Crowley Developer Portfolio',
     siteTitleAlt: 'Jason Crowley | Portfolio',
     siteHeadline: 'Jason Crowley Developer Portfolio',
-    siteUrl: 'https://jason-crowley.github.io/',
+    siteUrl: 'https://jason-crowley.netlify.com/',
     siteDescription:
-      'A portfolio containing a collection of projects written in React, JavaScript, Python and more, developed by Jason Crowley',
+      'A portfolio containing a collection of projects developed by Jason Crowley, written in React, JavaScript, Python and more',
     siteLanguage: 'en',
     siteImage: '/banner.jpg',
     author: 'Jason Crowley',
@@ -31,7 +31,7 @@ module.exports = {
         name: 'Jason Crowley Developer Portfolio',
         short_name: 'Jason C. Portfolio',
         description:
-          'A portfolio containing a collection of projects written in React, JavaScript, Python and more, developed by Jason Crowley',
+          'A portfolio containing a collection of projects developed by Jason Crowley, written in React, JavaScript, Python and more',
         start_url: '/',
         background_color: '#141821',
         theme_color: '#f6ad55',
